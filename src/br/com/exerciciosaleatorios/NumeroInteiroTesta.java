@@ -19,6 +19,9 @@ public class NumeroInteiroTesta {
 		n1.calcularNumero();
 		
 		System.out.println("Valor de E é: " + n1.valorE);
+		
+		entrada.close();
 	}
+	
 
 }
