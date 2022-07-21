@@ -24,9 +24,22 @@ public class ArrayListaScannerTesta {
 		System.out.println("Informe o salário das pessoas: ");
 		double salario = entrada.nextDouble();
 		
+		salario = salario * 3;
+		if (salario > 100) {
+			System.out.println(nome + " seu sálario é maior de 100,00");
+		} else if (salario < 100) {
+			System.out.println(nome + " seu sálario é menos que 100,00");
+		}
+		
+		if (idade > 50) {
+			System.out.println(nome + " sua idade é maior que 50 anos");
+		} else if (idade <50) {
+			System.out.println(nome + " sua idade é menor que 50 anos.");
+		}
 		
 		array.add(new ArrayListaScanner(nome, idade, salario));
 		
+		System.out.println(salario);
 		
 	}
 	for (ArrayListaScanner i : array) {
