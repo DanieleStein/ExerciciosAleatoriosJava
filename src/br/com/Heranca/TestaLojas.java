@@ -42,6 +42,8 @@ public class TestaLojas {
 		
 		donats.calcularPecas();
 		System.out.println();
+	
+		entrada.close();
 	}
 
 }

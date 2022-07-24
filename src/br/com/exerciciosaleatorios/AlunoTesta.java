@@ -13,14 +13,15 @@ import java.util.Scanner;
 public class AlunoTesta {
 	
 	public static void verificarAprovacao(Aluno aluno) {
+		
 		for (int i = 0; i < aluno.disciplina.length; i++) {
 			if (aluno.notas[i] >= 7) {
 				System.out.println(aluno.disciplina[i] + " Aprovado, com nota " + aluno.notas[i]);
 			} else {
 				System.out.println(aluno.disciplina[i] + " Reprovado, com nota " + aluno.notas[i]);
+				}
 			}
-		}
-	}
+		}	
 	
 	public static void main(String[] args) {
 		
@@ -39,14 +40,16 @@ public class AlunoTesta {
 		al1.disciplina[i] = entrada.nextLine();
 		
 		System.out.println("Quais são as notas? ");
-		al1.notas[i] = Double.parseDouble(entrada.nextLine());
+		al1.notas[i] = entrada.nextDouble();
+		entrada.nextLine();
 		//Integer.parseInteger(entrada.nextLine());
 		//Boolean.parseBoolean(entrada.nextLine());
 		//entrada.nextLine(); // para caractere
+		//Double.parseDouble(entrada.nextLine());
+		
 		
 		}
 		verificarAprovacao(al1);
-		
+	entrada.close();	
 	}
-
 }

@@ -11,6 +11,7 @@ public class SalarioPessoaTesta {
 	
 	ArrayList<SalarioPessoa> array = new ArrayList<>();
 	
+	
 	System.out.println("Informe quantas entradas teremos: ");
 	int quantidade = entrada.nextInt();
 	
