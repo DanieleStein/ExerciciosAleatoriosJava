@@ -1,4 +1,4 @@
-package br.com.dicionarios;
+package br.com.dicionariosListaConjuntos;
 
 import java.util.HashMap;
 import java.util.Map;
